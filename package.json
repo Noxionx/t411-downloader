@@ -1,0 +1,16 @@
+{
+  "name": "t411-downloader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "q": "^1.4.1",
+    "t411-manager": "^1.0.2",
+    "transmission": "^0.4.5"
+  }
+}
