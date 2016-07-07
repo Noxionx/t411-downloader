@@ -30,7 +30,7 @@ function _getTorrentRate(torrent){
     var rate = torrent['leechers'];
     var weight = 1 / Math.log(torrent['seeders']+2);
     rate = (rate * weight) - torrent['times_completed'];
-    return rate;
+    return torrent['times_completed']<10? rate : 0;
 }
 
 T411Downloader.prototype.getRatedTorrents = function(){
